@@ -22,13 +22,6 @@ body{
     background-repeat: no-repeat;
     margin-right: auto;
 }
-#navbar > .nav-btn {
-    display: none;
-  }
-  #navbar > #nav-check {
-    display: none;
-  }  
-
 .navbar-links{
     justify-content: flex-end;
     align-items: center;
@@ -43,31 +36,17 @@ body{
 }
 .navbar-links a{
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-size: 18px;
-    
 }
 .navbar-links a:hover{
-    background-color: #08090f;
-    color: #DCE0E4;
     padding: 5px;
+    color: #DCE0E4;
+    background-color: #08090f;
     transition: 1.0s;
 }
-.checkbtn {
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-}
-#check {
-	display: none;
-}
-.nav > #nav-check {
-    display: none;
-  }
+
+
 #toggle-mode{
     margin-left: 30px;
     background-color: transparent;
@@ -101,7 +80,7 @@ body{
 .dark-mode .navbar-links a{
     color: #DCE0E4;
 }
-.navbar-links a:hover{
+.dark-mode .navbar-links a:hover{
     background-color: #DCE0E4;
     color: #08090f;
 }
@@ -119,52 +98,9 @@ body{
 
 /* inicio do responsivo responsivo*/
 
-@media screen and (max-width: 1118px) {
 
-        #navbar > .nav-btn {
-          display: inline-block;
-          position: absolute;
-          right: 0px;
-          top: 0px;
-        }
-        #navbar > .nav-btn > label {
-          display: inline-block;
-          width: 50px;
-          height: 50px;
-          padding: 13px;
-        }
-        #navbar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-          background-color: rgba(0, 0, 0, 0.3);
-        }
-        #navbar > .nav-btn > label > span {
-          display: block;
-          width: 25px;
-          height: 10px;
-          border-top: 2px solid #eee;
-        }
-        #navbar > .navbar-links {
-          position: absolute;
-          display: block;
-          width: 100%;
-          background-color: #333;
-          height: 0px;
-          transition: all 0.3s ease-in;
-          overflow-y: hidden;
-          top: 50px;
-          left: 0px;
-        }
-        #navbar > .navbar-links > a {
-          display: block;
-          width: 100%;
-        }
-        #navbar > #nav-check:not(:checked) ~ .navbar-links{
-          height: 0px;
-        }
-         #navbar > #nav-check:checked ~ .navbar-links {
-          height: calc(100vh - 50px);
-          overflow-y: auto;
-        }
-      }
+
+        
 
 
 
