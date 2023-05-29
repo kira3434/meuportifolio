@@ -1,20 +1,31 @@
-body{
+body {
     padding: 30px 120px;
-    background-color: #DCE0E4;
-    
+    background: rgb(215,215,215);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 94%);
+    margin: 0;
+    /* Certifique-se de remover a margem padrão do body */
 }
-#inicio{
+
+#inicio {
     width: 100%;
     height: 85vh;
 }
-#navbar{
-    width: 100%;
+
+#navbar {
+    width: calc(100% - 240px);
+    /* Leva em consideração o padding de 120px em cada lado do body */
     height: 50px;
-    background-color: #DCE0E4;
+    background: rgb(215,215,215);
+background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 94%);
     display: flex;
+    position: fixed;
+    top: 30px;
+    /* Ajusta a distância do topo para compensar o padding do body */
+    left: 120px;
+    /* Ajusta a distância da esquerda para compensar o padding do body */
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
     background-image: url(imagens/logo\ portifolio.png);
@@ -22,32 +33,49 @@ body{
     background-repeat: no-repeat;
     margin-right: auto;
 }
-.navbar-links{
+
+.menu {
+    display: none;
+}
+
+.navbar-links {
     justify-content: flex-end;
     align-items: center;
     display: flex;
 }
-.navbar-links ul{
+
+.navbar-links ul {
     list-style: none;
 }
-.navbar-links li{
+
+.navbar-links li {
     display: inline;
     margin-left: 30px;
 }
-.navbar-links a{
+
+.navbar-links a {
     text-decoration: none;
-    color: #000000;
+    color: #004e7f;
     font-size: 18px;
 }
-.navbar-links a:hover{
+
+.navbar-links a:hover {
     padding: 5px;
-    color: #DCE0E4;
-    background-color: #08090f;
+    color: #2e2e2e;
+    background-color: #a0b8ca;
     transition: 1.0s;
 }
 
+.navbar-links.active {
+    height: 90vh;
+}
 
-#toggle-mode{
+.navbar-links.active ul {
+    opacity: 1;
+}
+
+
+#toggle-mode {
     margin-left: 30px;
     background-color: transparent;
     width: 100px;
@@ -56,53 +84,241 @@ body{
     transition: 1.0s;
     height: 30px;
     margin-top: 10px;
+    border: 1px solid black;
 }
-#toggle-mode:hover{
+
+#toggle-mode:hover {
     background-color: black;
     width: 120px;
     font-size: 16px;
     color: white;
 }
+
+#capa {
+    width: 100%;
+    height: 100%;
+    margin-top: 4%;
+    background-color: transparent;
+    display: flex;
+}
+
+.titulo-inicio {
+    margin-top: 100px;
+    margin-left: 200px;
+    position: absolute;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+.titulo-inicio h3 {
+    font-size: 30px;
+    color: #00233b;
+    line-height: 1px;
+}
+
+.titulo-inicio h1 {
+    font-size: 130px;
+    color: #3d5b74;
+    line-height: 1px;
+}
+
+.titulo-inicio h2 {
+    font-size: 130px;
+    color: #8e9295;
+    line-height: 1px;
+    margin-top: -0px;
+    margin-left: 40px;
+}
+
+.titulo-inicio p {
+    font-size: 20px;
+    max-width: 250px;
+    margin-top: -45px;
+    margin-left: 650px;
+    color: #00233b
+}
+
+.icon {
+    width: 240px;
+    height: 50px;
+    position: absolute;
+    right: -50px;
+    top: 120px;
+    display: flex;
+    animation: fade-in 5s ease-in-out forwards;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.icone img {
+    filter: invert(17%) sepia(70%) saturate(2408%) hue-rotate(183deg) brightness(99%) contrast(102%);
+    transition: 0.5s;
+}
+
+.icone img:hover {
+    filter: invert(89%) sepia(2%) saturate(5828%) hue-rotate(179deg) brightness(84%) contrast(86%);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 /*  inicio dark mode */
-.dark-mode{
-    background-color: #08090f;
+.dark-mode {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
 }
-.dark-mode #navbar{
-    background-color: #08090f;
+
+.dark-mode #navbar {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
 }
-.dark-mode .logo{
+
+.dark-mode .logo {
     background-image: url(imagens/logo\ portifolio\ dark\ mode.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
 }
-.dark-mode .navbar-links a{
+
+.dark-mode .navbar-links a {
     color: #DCE0E4;
 }
-.dark-mode .navbar-links a:hover{
+
+.dark-mode .navbar-links a:hover {
     background-color: #DCE0E4;
     color: #08090f;
 }
-.dark-mode #toggle-mode{
+
+.dark-mode #toggle-mode {
     border: 1px solid #DCE0E4;
     color: #DCE0E4;
 }
-.dark-mode #toggle-mode:hover{
+
+.dark-mode #toggle-mode:hover {
     background-color: #DCE0E4;
     width: 120px;
     font-size: 16px;
     color: #08090f;
 }
+.dark-mode .titulo-inicio h3 {
+    color: #004e7f;
+}
+
+.dark-mode .titulo-inicio h1 {
+    color: #9fb7cb;
+}
+
+.dark-mode .titulo-inicio h2 {
+    color: #8e9295;
+}
+
+.dark-mode .titulo-inicio p {
+    color: #004e7f;
+}
+
 /* fim do dark mode */
 
 /* inicio do responsivo responsivo*/
+@media screen and (max-width:1071px) {
+    body {
+        padding: 30px 90px;
+    }
 
+    #navbar {
+        width: calc(100% - 180px);
+        /* Leva em consideração o padding de 90px em cada lado do body */
 
+        top: 30px;
+        /* Ajusta a distância do topo para compensar o padding do body */
+        left: 90px;
+        /* Ajusta a distância da esquerda para compensar o padding do body */
+    }
 
-        
+}
 
+@media screen and (max-width:1000px) {
+    body {
+        padding: 30px 30px;
+    }
 
+    #navbar {
+        width: calc(100% - 60px);
+        /* Leva em consideração o padding de 30px em cada lado do body */
 
+        top: 30px;
+        /* Ajusta a distância do topo para compensar o padding do body */
+        left: 30px;
+        /* Ajusta a distância da esquerda para compensar o padding do body */
+    }
+}
+
+@media screen and (max-width:870px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .line {
+        width: 30px;
+        height: 3px;
+        background-color: #08090f;
+        margin: 10px 0;
+    }
+
+    .navbar-links {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 40vh;
+        background-color: #08090f;
+        transition: 0.5s;
+
+    }
+
+    .navbar-links ul {
+        position: relative;
+        top: -230px;
+        opacity: 0;
+    }
+
+    .navbar-links li {
+        display: block;
+        width: fit-content;
+        margin-right: 200px;
+        transition: 0.5s;
+        margin-bottom: 20px;
+    }
+
+    .navbar-links a {
+        color: #DCE0E4;
+    }
+
+    .navbar-links a:hover {
+        background-color: #DCE0E4;
+        color: #08090f;
+    }
+}
+
+@media screen and (max-width:405px) {
+
+    .navbar-links li {
+
+        margin-right: 130px;
+
+    }
+}
 
 /* fim do responsivo responsivo*/
