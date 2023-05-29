@@ -10,8 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
       // Alternar a classe 'dark-mode' no elemento body
       bodyElement.classList.toggle('dark-mode');
     });
+
+    menu = document.querySelector(".menu");
+    menu.onclick = function(){
+      navbarlinks = document.querySelector(".navbar-links");
+      navbarlinks.classList.toggle("active");
+    }
   });
- 
+
 
   
 
