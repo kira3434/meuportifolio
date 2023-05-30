@@ -1,7 +1,7 @@
 body {
     padding: 30px 120px;
-    background: rgb(215,215,215);
-    background: linear-gradient(90deg, rgba(215,215,215,1) 9%, #b7e5fb 94%);
+    background: rgb(215, 215, 215);
+    background: linear-gradient(90deg, rgba(215, 215, 215, 1) 9%, #b7e5fb 94%);
     margin: 0;
     /* Certifique-se de remover a margem padrão do body */
 }
@@ -15,8 +15,8 @@ body {
     width: calc(100% - 240px);
     /* Leva em consideração o padding de 120px em cada lado do body */
     height: 50px;
-    background: rgb(215,215,215);
-background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 94%);
+    background: rgb(215, 215, 215);
+    background: linear-gradient(90deg, rgba(215, 215, 215, 1) 9%, rgba(183, 229, 251, 1) 94%);
     display: flex;
     position: fixed;
     top: 30px;
@@ -175,24 +175,28 @@ background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 9
         opacity: 1;
     }
 }
-#sobre-me{
+
+#sobre-me {
     width: 100%;
     height: 85vh;
     display: flex;
 }
-.caixa-imagem{
+
+.caixa-imagem {
     width: 100%;
     height: 100%;
     display: flex;
     position: relative;
 }
-.texto-sobre{
+
+.texto-sobre {
     width: 1100px;
     height: 500px;
     margin-left: 80px;
     margin-top: 40px;
 }
-.icones-sobre{
+
+.icones-sobre {
     width: 200px;
     height: 40px;
     position: absolute;
@@ -200,32 +204,37 @@ background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 9
     left: 160px;
     display: flex;
 }
-.titulo-sobre{
+
+.titulo-sobre {
     margin-left: 100px;
     margin-top: 50px;
     line-height: 3px;
 }
-.titulo-sobre h2{
+
+.titulo-sobre h2 {
     font-size: 10px;
     color: #7a7a7a;
 }
-.titulo-sobre h1{
+
+.titulo-sobre h1 {
     font-size: 45px;
     color: #464646;
 }
-.conteudo-sobre{
+
+.conteudo-sobre {
     width: 700px;
     height: 350px;
     margin-left: 100px;
 }
 
-.conteudo-sobre p{
+.conteudo-sobre p {
     max-width: 600px;
     font-size: 23px;
     color: #5e788c;
     text-shadow: 5px 5px 5px 5px #08090f;
 }
-.botão-sobre a{
+
+.botão-sobre a {
     position: absolute;
     left: 400px;
     padding: 5px 150px;
@@ -236,36 +245,39 @@ background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 9
     text-decoration: none;
     transition: 1.0s;
 }
-.botão-sobre a:hover{
+
+.botão-sobre a:hover {
     padding: 7px 160px;
     background-color: #004e7f;
     color: #DCE0E4;
 }
-.habilidades-icones{
+
+.habilidades-icones {
     width: 400px;
     height: 500px;
     position: absolute;
     top: 40px;
     left: 775px;
 }
-.caixa-habilidades{
+
+.caixa-habilidades {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 5px;
-background: #d0edfb;
+    background: #cbeeff;
 }
 
 /*  inicio dark mode */
 .dark-mode {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 4%, rgba(0, 32, 56, 1) 77%);
 }
 
 .dark-mode #navbar {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 4%, rgba(0, 32, 56, 1) 77%);
 }
 
 .dark-mode .logo {
@@ -296,6 +308,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
     font-size: 16px;
     color: #08090f;
 }
+
 .dark-mode .titulo-inicio h3 {
     color: #004e7f;
 }
@@ -316,22 +329,24 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
 
 /* inicio do responsivo responsivo*/
 
-@media screen and (max-width:1285px){
-    
+@media screen and (max-width:1285px) {
+
     .titulo-inicio {
         margin-top: 100px;
         margin-left: 100px;
-        
+
     }
 }
-@media screen and (max-width:1168px){
-    
+
+@media screen and (max-width:1168px) {
+
     .titulo-inicio {
         margin-top: 100px;
         margin-left: 0px;
-        
+
     }
 }
+
 @media screen and (max-width:1071px) {
     body {
         padding: 30px 90px;
@@ -356,15 +371,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         color: #00233b;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h1 {
         font-size: 90px;
     }
-    
+
     .titulo-inicio h2 {
         font-size: 90px;
     }
-    
+
     .titulo-inicio p {
         font-size: 20px;
         max-width: 250px;
@@ -372,17 +387,18 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-left: 370px;
         color: #00233b
     }
-    
+
     .icon {
         right: -110px;
         top: 80px;
         display: flex;
         animation: fade-in 5s ease-in-out forwards;
     }
+
     .titulo-inicio {
         margin-top: 200px;
         margin-left: 0px;
-        
+
     }
 }
 
@@ -402,21 +418,21 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
     }
 }
 
-@media screen and (max-width:985px){
+@media screen and (max-width:985px) {
 
-    
+
     .titulo-inicio h3 {
         font-size: 20px;
         color: #00233b;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h1 {
         font-size: 110px;
         color: #3d5b74;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h2 {
         font-size: 110px;
         color: #8e9295;
@@ -424,7 +440,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-top: -0px;
         margin-left: 40px;
     }
-    
+
     .titulo-inicio p {
         font-size: 20px;
         max-width: 250px;
@@ -432,14 +448,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-left: 450px;
         color: #00233b
     }
-    
+
     .icon {
         right: -110px;
         top: 100px;
         display: flex;
         animation: fade-in 5s ease-in-out forwards;
     }
-    
+
 }
 
 
@@ -465,7 +481,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         width: 40vh;
         background-color: #08090f;
         transition: 0.5s;
-       z-index: 1;
+        z-index: 1;
     }
 
     .navbar-links ul {
@@ -497,13 +513,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         color: #00233b;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h1 {
         font-size: 70px;
         color: #3d5b74;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h2 {
         font-size: 70px;
         color: #8e9295;
@@ -511,7 +527,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-top: -0px;
         margin-left: 40px;
     }
-    
+
     .titulo-inicio p {
         font-size: 20px;
         max-width: 250px;
@@ -519,13 +535,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-left: 250px;
         color: #00233b
     }
-    
+
     .icon {
         right: -120px;
         top: 60px;
         display: flex;
         animation: fade-in 5s ease-in-out forwards;
     }
+
     .titulo-inicio {
         margin-top: 200px;
         margin-left: 100px;
@@ -539,13 +556,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         color: #00233b;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h1 {
         font-size: 70px;
         color: #3d5b74;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h2 {
         font-size: 70px;
         color: #8e9295;
@@ -553,22 +570,22 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-top: -0px;
         margin-left: 0px;
     }
-    
+
     .titulo-inicio p {
         font-size: 20px;
         max-width: 250px;
         margin-top: -25px;
         margin-left: 200px;
         color: #00233b
-
     }
-    
+
     .icon {
-       right: 200px;
+        right: 200px;
         top: 160px;
         display: flex;
         animation: fade-in 5s ease-in-out forwards;
     }
+
     .titulo-inicio {
         margin-top: 200px;
         margin-right: 20px;
@@ -576,6 +593,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-left: 0;
     }
 }
+
 @media screen and (max-width:488px) {
 
     .titulo-inicio h3 {
@@ -583,13 +601,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         color: #00233b;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h1 {
         font-size: 50px;
         color: #3d5b74;
         line-height: 1px;
     }
-    
+
     .titulo-inicio h2 {
         font-size: 50px;
         color: #8e9295;
@@ -597,26 +615,25 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         margin-top: -0px;
         margin-left: 0px;
     }
-    
+
     .titulo-inicio p {
         font-size: 20px;
         max-width: 250px;
         margin-top: -25px;
         margin-left: 0px;
         color: #00233b
-
     }
-    
+
     .icon {
-       right: 70px;
+        right: 70px;
         top: 180px;
         display: flex;
         animation: fade-in 5s ease-in-out forwards;
     }
 }
 
-@media screen and (max-width:505px){
-    
+@media screen and (max-width:505px) {
+
     .navbar-links {
         height: 0;
         position: absolute;
@@ -625,16 +642,17 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
         width: 40vh;
         background-color: #08090f;
         transition: 0.5s;
-       z-index: 1;
+        z-index: 1;
     }
 }
+
 @media screen and (max-width:405px) {
 
     .navbar-links li {
 
         margin-right: 100px;
     }
- 
+
 }
 
 /* fim do responsivo responsivo*/
