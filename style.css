@@ -1,7 +1,7 @@
 body {
     padding: 30px 120px;
     background: rgb(215,215,215);
-    background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 94%);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 9%, #b7e5fb 94%);
     margin: 0;
     /* Certifique-se de remover a margem padrão do body */
 }
@@ -175,7 +175,87 @@ background: linear-gradient(90deg, rgba(215,215,215,1) 9%, rgba(183,229,251,1) 9
         opacity: 1;
     }
 }
+#sobre-me{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.caixa-imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.texto-sobre{
+    width: 1100px;
+    height: 500px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.icones-sobre{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 450px;
+    left: 160px;
+    display: flex;
+}
+.titulo-sobre{
+    margin-left: 100px;
+    margin-top: 50px;
+    line-height: 3px;
+}
+.titulo-sobre h2{
+    font-size: 10px;
+    color: #7a7a7a;
+}
+.titulo-sobre h1{
+    font-size: 45px;
+    color: #464646;
+}
+.conteudo-sobre{
+    width: 700px;
+    height: 350px;
+    margin-left: 100px;
+}
 
+.conteudo-sobre p{
+    max-width: 600px;
+    font-size: 23px;
+    color: #5e788c;
+    text-shadow: 5px 5px 5px 5px #08090f;
+}
+.botão-sobre a{
+    position: absolute;
+    left: 400px;
+    padding: 5px 150px;
+    background-color: #9fb7cb;
+    color: #2e2e2e;
+    border-radius: 15px;
+    top: 465px;
+    text-decoration: none;
+    transition: 1.0s;
+}
+.botão-sobre a:hover{
+    padding: 7px 160px;
+    background-color: #004e7f;
+    color: #DCE0E4;
+}
+.habilidades-icones{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: 775px;
+}
+.caixa-habilidades{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+background: #d0edfb;
+}
 
 /*  inicio dark mode */
 .dark-mode {
@@ -535,20 +615,26 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,32,56,1) 77%);
     }
 }
 
+@media screen and (max-width:505px){
+    
+    .navbar-links {
+        height: 0;
+        position: absolute;
+        top: 40px;
+        right: -40px;
+        width: 40vh;
+        background-color: #08090f;
+        transition: 0.5s;
+       z-index: 1;
+    }
+}
 @media screen and (max-width:405px) {
 
     .navbar-links li {
 
         margin-right: 100px;
     }
-    .navbar-links {
-        height: 0;
-        position: absolute;
-        top: 40px;
-        right: -40px;
-        width: 30vh;
-        background-color: #08090f;
-        transition: 0.5s;
-       z-index: 1;
-    }
+ 
 }
+
+/* fim do responsivo responsivo*/
