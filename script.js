@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Seu código JavaScript aqui
-    
     // Obtém o botão de alternância e o elemento body
     const toggleButton = document.getElementById('toggle-mode');
     const bodyElement = document.body;
@@ -16,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
       navbarlinks = document.querySelector(".navbar-links");
       navbarlinks.classList.toggle("active");
     }
+    AOS.init({
+      duration:2000
+    });
   });
-
-
-  
 
