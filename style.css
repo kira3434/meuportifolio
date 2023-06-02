@@ -259,23 +259,21 @@ box-shadow: 5px 5px 5px #979797;
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid black;
     margin-top: 3%;
     display: flex;
 }
 .slides{
     width: 70%;
     height: 100%;
-    border: 1px solid blue;
 }
 
 .carousel {
     position: relative;
-    width: 700px;
-    height: 350px;
+    width: 100%;
+    height: 70%;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 10%;
   }
   
   .slide {
@@ -296,7 +294,6 @@ box-shadow: 5px 5px 5px #979797;
   .thumbnails {
     width: 30%;
     height: 100%;
-    border: 1px solid green;
   }
   
   .thumbnail {
