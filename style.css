@@ -1,9 +1,7 @@
 body {
     padding: 30px 120px;
-    background: rgb(215, 215, 215);
-    background: linear-gradient(90deg, rgba(215, 215, 215, 1) 9%, #b7e5fb 94%);
-    margin: 0;
-    /* Certifique-se de remover a margem padrão do body */
+    background: rgb(229,251,239);
+    background: linear-gradient(90deg, rgba(229,251,239,1) 0%, rgba(203,242,215,1) 45%);
 }
 
 #inicio {
@@ -15,8 +13,8 @@ body {
     width: calc(100% - 240px);
     /* Leva em consideração o padding de 120px em cada lado do body */
     height: 50px;
-    background: rgb(215, 215, 215);
-    background: linear-gradient(90deg, rgba(215, 215, 215, 1) 9%, rgba(183, 229, 251, 1) 94%);
+    background: rgb(229,251,239);
+background: linear-gradient(90deg, rgba(229,251,239,1) 0%, rgba(203,242,215,1) 45%);
     display: flex;
     position: fixed;
     top: 30px;
@@ -57,14 +55,14 @@ body {
 
 .navbar-links a {
     text-decoration: none;
-    color: #004e7f;
+    color: #3B4E3F;
     font-size: 18px;
 }
 
 .navbar-links a:hover {
     padding: 5px;
     color: #2e2e2e;
-    background-color: #a0b8ca;
+    background-color: #bff2cf;
     transition: 1.0s;
 }
 
@@ -115,19 +113,19 @@ body {
 
 .titulo-inicio h3 {
     font-size: 30px;
-    color: #00233b;
+    color: #263429;
     line-height: 1px;
 }
 
 .titulo-inicio h1 {
     font-size: 130px;
-    color: #3d5b74;
+    color: #3B4E3F;
     line-height: 1px;
 }
 
 .titulo-inicio h2 {
     font-size: 130px;
-    color: #8e9295;
+    color: #6c9475;
     line-height: 1px;
     margin-top: -0px;
     margin-left: 40px;
@@ -138,7 +136,7 @@ body {
     max-width: 250px;
     margin-top: -45px;
     margin-left: 650px;
-    color: #00233b
+    color: #002604
 }
 
 .icon {
@@ -158,12 +156,11 @@ body {
 }
 
 .icone img {
-    filter: invert(17%) sepia(70%) saturate(2408%) hue-rotate(183deg) brightness(99%) contrast(102%);
-    transition: 0.5s;
+    filter: invert(23%) sepia(37%) saturate(293%) hue-rotate(81deg) brightness(98%) contrast(85%);
 }
 
 .icone img:hover {
-    filter: invert(89%) sepia(2%) saturate(5828%) hue-rotate(179deg) brightness(84%) contrast(86%);
+    filter: invert(59%) sepia(19%) saturate(494%) hue-rotate(81deg) brightness(88%) contrast(91%);
 }
 
 @keyframes fade-in {
@@ -212,7 +209,7 @@ margin-left: 40px;
 .texto-sobre p{
     font-size: 22px;
     max-width: 85%;
-    color: #5980a1;
+    color: #3e5c45;
     margin-left: 40px;
 }
 .icones-sobre {
@@ -228,12 +225,11 @@ margin-left: 40px;
 }
 
 .icon-sobre img {
-    filter: invert(17%) sepia(70%) saturate(2408%) hue-rotate(183deg) brightness(99%) contrast(102%);
-    transition: 0.5s;
+    filter: invert(23%) sepia(37%) saturate(293%) hue-rotate(81deg) brightness(98%) contrast(85%);
 }
 
 .icon-sobre img:hover {
-    filter: invert(89%) sepia(2%) saturate(5828%) hue-rotate(179deg) brightness(84%) contrast(86%);
+    filter: invert(59%) sepia(19%) saturate(494%) hue-rotate(81deg) brightness(88%) contrast(91%);
 }
 .habilidades{
     width: 40%;
@@ -246,7 +242,7 @@ height: 150px;
 margin: 0 auto;
 margin-bottom: 2%;
 margin-top: 5%;
-background-color: #b7e5fb;
+background-color: #6c9475;
 box-shadow: 5px 5px 5px #979797;
 
 }
